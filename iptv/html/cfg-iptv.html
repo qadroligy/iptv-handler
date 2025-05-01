@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IPTV Config Editor</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  
+  <!DOCTYPE html>
+  <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <title>IPTV Config Editor</title>
+          <link rel="stylesheet" href="style.css">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+          
+</head>
+<body>
+
+    <h1>IPTV Config Editor</h1>
+
+    <div>
+        <button id="applyButton">Apply Changes</button>
+        <button id="resetButton">Reset</button>
+        <span id="spinner">⏳ Saving...</span>
+    </div>
+    
+    <div id="message"></div>
+    
+    
+    
+    <table id="configTable">
+        <thead>
+            <tr>
+                <th class="circle-column">
+                    <input type="checkbox" id="selectAllCheckbox" title="Select/Deselect All">
+                </th>
+                <th id="eyeHeader" title="Click to toggle view: Default → All → Hidden">
+                    <i class="fa-solid fa-eye"></i>
+                </th>
+                <th>Source Group Title</th>
+                <th>Custom Group</th>
+                <th><input type="checkbox" id="exportCheckbox" title="Select/Deselect All">Export</th>
+                <th>Category ID</th>
+                <th>Channel Count</th>
+            </tr>
+        </thead>
+        
+        <tbody></tbody>
+    </table>
+    
+
+
+    
+    <!-- Reset Modal -->
+    <div id="resetModal" class="modal">
+        <div class="modal-content">
+            <p>Are you sure you want to reset?</p>
+            <button id="confirmReset">Yes, Reset</button>
+            <button id="cancelReset">Cancel</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    </body>
+    </html>
+    
+  
+  

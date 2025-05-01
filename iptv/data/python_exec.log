@@ -1,0 +1,3 @@
+2025-05-01 17:45:35,865 - INFO - Created backup: ../data/output.cfg.backup
+2025-05-01 17:45:35,868 - INFO - Sorted config file: ../data/output.cfg
+2025-05-01 17:45:35,870 - INFO - Exported sorted JSON for HTML editor at: ../data/output.json

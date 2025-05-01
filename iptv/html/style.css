@@ -1,0 +1,157 @@
+/* General Layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+tr:hover {
+    background-color: #f2f2f2;
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Apply Changes Button */
+#applyButton {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#applyButton:hover {
+    background-color: #45a049;
+}
+
+/* Reset Button */
+#resetButton {
+    background-color: #f44336;
+    color: white;
+}
+
+#resetButton:hover {
+    background-color: #e53935;
+}
+
+/* Spinner and Message */
+#spinner {
+    display: none;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+#message {
+    margin-top: 10px;
+    font-size: 16px;
+    transition: opacity 0.5s;
+}
+
+/* Eye Button (Hide/Unhide) */
+.eye-button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 4px;
+    color: #444444;
+}
+
+.eye-button:hover {
+    color: #007bff;
+
+}
+
+
+th:first-child {
+    text-align: center;
+    width: 50px;
+}
+
+
+/* Row Hidden (Faded) */
+tr.faded {
+    opacity: 0.3;
+    transition: opacity 0.5s ease;
+}
+
+/* Modal Popup */
+.modal {
+    display: none; /* Start hidden */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    opacity: 0;
+    transition: opacity 0.8s ease;
+    pointer-events: none; /* Prevent clicks when hidden */
+}
+
+.modal.show {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    transform: translateY(-20px);
+}
+
+.modal.show .modal-content {
+    transform: translateY(0);
+}
+
+/*
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+}
+
+.modal-content button {
+    margin-top: 20px;
+}
+*/
+
+.eye-button:hover i,
+.row-eye-button:hover i {
+    color: #007bff; /* Blue on hover */
+    transform: scale(1.2); /* Slight zoom */
+    transition: 0.2s;
+}
+

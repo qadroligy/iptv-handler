@@ -1,0 +1,16 @@
+## Enable URL rewriting
+#RewriteEngine On
+#
+## Allow directory listing and index
+#Options +FollowSymLinks -Indexes
+#DirectoryIndex index.html
+#
+## Enable CORS so JavaScript can load JSON files
+#<IfModule mod_headers.c>
+#    Header set Access-Control-Allow-Origin "*"
+#    Header set Access-Control-Allow-Methods "GET, OPTIONS"
+#    Header set Access-Control-Allow-Headers "Content-Type"
+#</IfModule>
+#
+## Handle 404 errors
+#ErrorDocument 404 /404.html
