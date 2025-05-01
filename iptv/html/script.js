@@ -1,3 +1,5 @@
+// 2023-10-01...
+
 let configData = {};
 let hiddenGroups = [];
 let viewMode = "default"; // Modes: "default", "all", "hidden"
